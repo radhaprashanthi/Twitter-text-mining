@@ -1,9 +1,12 @@
+from pathlib import Path
 import re
 import pandas as pd
 import json
 import matplotlib.pyplot as plt
 
-tweets_data_path = '/home/radha/Projects/Twitter/twitter_data.txt'
+print("Directory Path:", Path().absolute())  
+
+tweets_data_path = str(Path().absolute())+'/twitter_data.txt'
 
 tweets_data = []
 tweets_file = open(tweets_data_path, "r")
